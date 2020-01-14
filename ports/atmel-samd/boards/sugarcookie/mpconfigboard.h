@@ -3,17 +3,17 @@
 
 #define MICROPY_HW_LED_STATUS   (&pin_PA27)
 
-//#define SPI_FLASH_MOSI_PIN          &pin_PA19
-//#define SPI_FLASH_MISO_PIN          &pin_PA18
-//#define SPI_FLASH_SCK_PIN           &pin_PA07
-////#define SPI_FLASH_CS_PIN            &pin_PA13 // not used
+#define SPI_FLASH_MOSI_PIN          &pin_PA19
+#define SPI_FLASH_MISO_PIN          &pin_PA18
+#define SPI_FLASH_SCK_PIN           &pin_PA17
+//#define SPI_FLASH_CS_PIN            &pin_PA13 // not used
 
 // These are pins not to reset.
 #define MICROPY_PORT_A        ( 0 )
-// #define MICROPY_PORT_B        ( 0 )
-// #define MICROPY_PORT_C        ( 0 )
+#define MICROPY_PORT_B        ( 0 )
+#define MICROPY_PORT_C        ( 0 )
 
-#define BOARD_HAS_CRYSTAL 1
+#define BOARD_HAS_CRYSTAL 0
 
 #define DEFAULT_I2C_BUS_SCL (&pin_PA23)
 #define DEFAULT_I2C_BUS_SDA (&pin_PA22)
