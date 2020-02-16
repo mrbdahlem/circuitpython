@@ -1,7 +1,7 @@
 #define MICROPY_HW_BOARD_NAME "SugarCookie"
 #define MICROPY_HW_MCU_NAME "samd21e18"
 
-#define SPI_FLASH_BAUDRATE  (8000000)
+//#define SPI_FLASH_BAUDRATE  (8000000)
 
 #define MICROPY_HW_LED_STATUS   (&pin_PA27)
 
@@ -9,7 +9,6 @@
 #define SPI_FLASH_MISO_PIN          (&pin_PA18)
 #define SPI_FLASH_SCK_PIN           (&pin_PA17)
 #define SPI_FLASH_CS_PIN            (&pin_PA16)
- // NULL // not used
 
 // These are pins not to reset.
 #define MICROPY_PORT_A        ( 0 )
